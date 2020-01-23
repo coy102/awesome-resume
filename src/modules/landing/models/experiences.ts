@@ -12,16 +12,34 @@ interface IWorkExperiences {
   url?: string;
   responbility: Array<string>;
   images?: Array<string>;
+  category?: 'personal' | 'profesional';
 }
 
-interface IEducations {
-  place: string;
+interface IAcademic {
+  schoolName: string;
   focus?: string;
   rangeDate: string;
-  description: string;
 }
 
-export const WorkExperiences: Array<IWork> = [
+export const academics: Array<IAcademic> = [
+  {
+    schoolName: 'SMKS Yuppentek 2 Tangerang',
+    focus: 'Computer Science High School',
+    rangeDate: '2012 - 2015'
+  },
+  {
+    schoolName: 'UPH School Program',
+    focus: '.NET junior developer',
+    rangeDate: '2015 - 2016'
+  },
+  {
+    schoolName: 'Raharja University',
+    focus: 'Computer Science - Software Engineering',
+    rangeDate: '2016 - present'
+  }
+];
+
+export const workExperiences: Array<IWork> = [
   {
     place: `Visionet Data Internasional`,
     workExperince: [
@@ -36,7 +54,8 @@ export const WorkExperiences: Array<IWork> = [
           'Rebuild MOS 3 from MS Infopath to ASP.NET MVC 5',
           'Support after Production Ready'
         ],
-        images: ['1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg']
+        images: ['1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg'],
+        category: 'profesional'
       },
       {
         job: `Fullstack Developer`,
@@ -49,7 +68,8 @@ export const WorkExperiences: Array<IWork> = [
           'Develop Application web based application',
           'Support after Production Ready'
         ],
-        images: ['1.jpeg', '2.jpeg', '3.jpeg']
+        images: ['1.jpeg', '2.jpeg', '3.jpeg'],
+        category: 'profesional'
       },
       {
         job: `Mobile Developer (Hard Support)`,
@@ -58,7 +78,9 @@ export const WorkExperiences: Array<IWork> = [
           'Employee service is intended to provide training, tasks, and social media for all Lippo Homes employees',
         rangeDate: `2017 - 2018`,
         tech: ['React JS', 'React Native', 'Redux Thunk'],
-        responbility: ['Supporting for fixing bugs and adjusments']
+        responbility: ['Supporting for fixing bugs and adjusments'],
+        images: ['1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg'],
+        category: 'profesional'
       },
       {
         job: `Frontend Developer (Web)`,
@@ -68,7 +90,9 @@ export const WorkExperiences: Array<IWork> = [
         rangeDate: `2017 - 2018`,
         tech: ['React JS', 'Next JS', 'Redux Saga', 'Typescript'],
         responbility: ['Develop web platform Rumah Vidia'],
-        url: 'www.rumahvidia.com'
+        url: 'www.rumahvidia.com',
+        images: ['1.jpeg', '2.jpeg', '3.jpeg', '1.png', '2.png', '3.png'],
+        category: 'profesional'
       },
       {
         job: `Tech Lead`,
@@ -87,7 +111,9 @@ export const WorkExperiences: Array<IWork> = [
         responbility: [
           'Lead & design architecture engine tech Web FE & BE',
           'Training and mentoring junior developer'
-        ]
+        ],
+        images: ['1.jpeg', '2.jpeg', '3.jpeg'],
+        category: 'profesional'
       },
       {
         job: `Tech Lead Microservices`,
@@ -106,7 +132,8 @@ export const WorkExperiences: Array<IWork> = [
         responbility: [
           'Lead & design architecture engine tech BE Microservices',
           'Research and Development'
-        ]
+        ],
+        category: 'profesional'
       },
       {
         job: `Frontend Developer (Web)`,
@@ -115,7 +142,9 @@ export const WorkExperiences: Array<IWork> = [
           'Infinity8 is used to sell, promote, regulate the sale of property used by internal companies of Lippo Karawaci, Meikarta, and Lippo Cikarang. User management is used to manage all application user data',
         rangeDate: `2017 - 2018`,
         tech: ['React JS', 'Next JS', 'MobX', 'Typescript'],
-        responbility: ['Develope Web App user management']
+        responbility: ['Develope Web App user management'],
+        images: ['1.png', '2.png', '3.png', '4.png', '5.png', '6.png'],
+        category: 'profesional'
       }
     ]
   }

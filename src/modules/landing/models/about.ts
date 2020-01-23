@@ -8,6 +8,7 @@ interface ISummary {
   name: string;
   title: string;
   description: string;
+  photo?: string;
 }
 
 interface IContact {
